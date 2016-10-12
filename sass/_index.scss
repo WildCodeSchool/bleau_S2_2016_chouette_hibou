@@ -1,0 +1,112 @@
+/****************************/
+/****************************/
+/*        Logo              */
+/****************************/
+/****************************/
+.nb_navbar_logo {
+  width: 70%;
+  height: 70%;
+}
+
+/****************************/
+/****************************/
+/*        row               */
+/****************************/
+/****************************/
+.rowCustom {
+    margin-top: 20px;
+}
+/***************************/
+/***************************/
+/* BLOCK avec texte = menu */
+/***************************/
+/***************************/
+.resultContainer {
+    background-color:#dedede;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Gestion affichage bouton */
+.resultContainer .viewThisResult {
+    display: none;
+}
+.resultContainer:hover .viewThisResult {
+    display: inline;
+}
+
+/* Zone élément cliquable*/
+/* non survolé */
+.viewThisResult a {
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding: 9px 34px;
+    position: absolute;
+    vertical-align: bottom;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    /**/
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    /*letter-spacing: 2px;
+    border: 3px solid #333;*/
+    /*margin-bottom: -350%;*/
+    /*margin-left: 25%;*/
+    margin:auto;
+    outline: none;
+}
+
+/* Zone élément cliquable*/
+/* survolé */
+.viewThisResult a:hover {
+    border-color: #999;
+    color: #999;
+    margin-left: auto;
+    /*margin-bottom: -300%;*/
+    margin:auto;
+    position: absolute;
+}
+
+/* Titre de la box */
+.h3BoxMenu {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: bold;
+    font-weight: 80%;
+    padding-top: 5px;
+}   
+
+/* paragraphe de la box */
+.pBoxMenu {
+    text-align: justify;
+    font-weight: 60%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/****************************/
+/****************************/
+/* BLOCK avec photo + effet */
+/****************************/
+/****************************/
+
+/* SURCHARGE framework ihover */
+.ih-item.square {
+  margin-top: 20px;
+  /*width: 316px;*/
+  /* Suppression bordure shadow */
+  border: 0px solid #fff !important;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .mobile{
+    height: 250px;
+  }
+}
