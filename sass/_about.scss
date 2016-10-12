@@ -1,0 +1,39 @@
+// Qui suis-je ?
+.about {
+	font-size: 50px;
+	// text-align: center;
+	// padding-left: 80px;
+}
+
+.about_page h2 {
+	font: $font-titre;
+	margin-left: 120px;
+	margin-top: 50px;
+}
+
+.about_page h3 {
+	@include fontandline();
+	// font-size: 22px;
+}
+
+.about_p {
+	font: $font-body;
+}
+
+.container {	
+	text-align: justify;
+}
+
+// .container h2 {
+// 	font-size: 40px;
+// }
+
+.container p {
+	font-size: 16px;
+}
+
+.expression {
+	// font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    font-weight: bold;
+}
