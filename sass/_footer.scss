@@ -1,8 +1,61 @@
 /*FOOTER*/
-
-footer.page-footer {
-	margin-top: 500px !important;
+footer.page-footer{
+    background-color:white;
+	margin-top: 10px;
+    margin-bottom:0px;
 	padding-top: 0px;
-	border: 2px solid black;
+	background-image: url("../images/Les-hiboux.gif");
+	background-repeat:no-repeat;
+	background-position:right;
+	margin-right:-20px;
+    background-size: 39%;
+    // z-index: -10000;
+    // background: linear-gradient(#1DB1DD, #FFF) !important;
 }
 
+
+/*.fa-facebook-square{
+    margin-left:11.5px;
+    margin-top:73px;
+}
+
+.fa-instagram{
+    margin-left:12.5px;
+    margin-top:65px;
+}
+*/
+
+.fa-instagram{
+    margin-left: 10%;
+}
+
+#row-footer{
+	margin-left:80px;
+}
+
+h5.brown-text{
+	font: $font-titre;
+}
+
+.footer-copyright{
+	font-color:brown-text text-lighten-3;
+}
+
+/*FIN FOOTER*/
+
+/*RETOUR EN HAUT*/
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: url("../images/noun2.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+/*FIN RETOUR EN HAUT*/
