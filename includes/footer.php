@@ -1,40 +1,60 @@
+
+
     <footer class="page-footer">
         <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            <div class="row" id="row-footer">
+                <div class="col l3 s12">
+                    <h5>Catégories</h5>
+                   <ul>
+                        <li><a class="doudous" href="./doudous.php">Les doudous</a></li>
+                        <li><a class="bijoux" href="./bijoux.php">Les bijoux</a></li>
+                        <li><a class="accessoires" href="./accessoires.php">Les accessoires</a></li>
                     </ul>
                 </div>
-            </div>
+                <div class="col l3 s12">
+                    <h5>A propos</h5>
+                    <ul>
+                        <li><a class="whoami" href="./about.php">Qui suis-je ?</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5>Contacts</h5>
+                    <ul>
+                        <li><a class="contactme" href="./form.php">Formulaire de contact</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5>Me suivre </h5>
+                        <div class="row">
+                            <div class="col l6 s12">
+                                <img class="social responsive-img" data-alt-src="https://s21.postimg.org/nyq4jte47/hiboux_yeux_ouverts.png" src="https://s21.postimg.org/5kflfu1tj/hibou_bleu_yruxouverts.png" />
+                                <!-- <img src="./images/chouettefb.png" class="social" /> --><!-- <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i> -->
+                            </div>
+                            <div class="col l6 s12">
+                                <img class="social" data-alt-src="https://s13.postimg.org/ysmy76ppj/Hiboux_bleu_yeux_fermes2.png" src="https://s13.postimg.org/anm8ph5ev/Hiboux_bleu_yeux_ouverts2.png" />
+                                <!-- <img src="./images/chouetteig.png" class="social" /> --><!-- <i class="fa fa-instagram fa-3x" aria-hidden="true"></i> -->
+                            </div>
+                        </div>
+                </div>        
         </div>
+
         <div class="footer-copyright">
             <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                © 2016 All Rights Reserved Chouettes Hiboux Doudous | Design by WCS
             </div>
         </div>
     </footer>
 
     <!--  Scripts-->
     <!-- Compiled and minified JavaScript -->
-    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
-
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".button-collapse").sideNav();}
-        );
-    </script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/chouettesHiboux.js"></script>
+    
 
 </body>
 </html>
+
