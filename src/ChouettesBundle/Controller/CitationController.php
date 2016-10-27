@@ -44,7 +44,7 @@ class CitationController extends Controller
             $em->persist($citation);
             $em->flush();
 
-            return $this->redirectToRoute('citation_show', array('id' => $citation->getId()));
+            return $this->redirectToRoute('citation_index', array('id' => $citation->getId()));
         }
 
         return $this->render('@Chouettes/Admin/citation/new.html.twig', array(
@@ -54,22 +54,8 @@ class CitationController extends Controller
     }
 
     /**
-     * Finds and displays a Citation entity.
-     *
-     */
-    public function showAction(Citation $citation)
-    {
-        $deleteForm = $this->createDeleteForm($citation);
-
-        return $this->render('@Chouettes/Admin/citation/show.html.twig', array(
-            'citation' => $citation,
-            'delete_form' => $deleteForm->createView(),
-        ));
-    }
-
-    /**
      * Displays a form to edit an existing Citation entity.
-     *
+     * 
      */
     public function editAction(Request $request, Citation $citation)
     {
@@ -82,7 +68,7 @@ class CitationController extends Controller
             $em->persist($citation);
             $em->flush();
 
-            return $this->redirectToRoute('citation_edit', array('id' => $citation->getId()));
+            return $this->redirectToRoute('citation_index', array('id' => $citation->getId()));
         }
 
         return $this->render('@Chouettes/Admin/citation/edit.html.twig', array(

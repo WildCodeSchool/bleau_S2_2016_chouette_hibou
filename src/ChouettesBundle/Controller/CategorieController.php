@@ -44,26 +44,12 @@ class CategorieController extends Controller
             $em->persist($categorie);
             $em->flush();
 
-            return $this->redirectToRoute('categorie_show', array('id' => $categorie->getId()));
+            return $this->redirectToRoute('categorie_index', array('id' => $categorie->getId()));
         }
 
         return $this->render('@Chouettes/Admin/categorie/new.html.twig', array(
             'categorie' => $categorie,
             'form' => $form->createView(),
-        ));
-    }
-
-    /**
-     * Finds and displays a Categorie entity.
-     *
-     */
-    public function showAction(Categorie $categorie)
-    {
-        $deleteForm = $this->createDeleteForm($categorie);
-
-        return $this->render('@Chouettes/Admin/categorie/show.html.twig', array(
-            'categorie' => $categorie,
-            'delete_form' => $deleteForm->createView(),
         ));
     }
 
@@ -82,7 +68,7 @@ class CategorieController extends Controller
             $em->persist($categorie);
             $em->flush();
 
-            return $this->redirectToRoute('categorie_edit', array('id' => $categorie->getId()));
+            return $this->redirectToRoute('categorie_index', array('id' => $categorie->getId()));
         }
 
         return $this->render('@Chouettes/Admin/categorie/edit.html.twig', array(

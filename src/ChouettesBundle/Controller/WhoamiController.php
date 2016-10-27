@@ -44,26 +44,12 @@ class WhoamiController extends Controller
             $em->persist($whoami);
             $em->flush();
 
-            return $this->redirectToRoute('whoami_show', array('id' => $whoami->getId()));
+            return $this->redirectToRoute('whoami_index', array('id' => $whoami->getId()));
         }
 
         return $this->render('@Chouettes/Admin/whoami/new.html.twig', array(
             'whoami' => $whoami,
             'form' => $form->createView(),
-        ));
-    }
-
-    /**
-     * Finds and displays a Whoami entity.
-     *
-     */
-    public function showAction(Whoami $whoami)
-    {
-        $deleteForm = $this->createDeleteForm($whoami);
-
-        return $this->render('@Chouettes/Admin/whoami/show.html.twig', array(
-            'whoami' => $whoami,
-            'delete_form' => $deleteForm->createView(),
         ));
     }
 
@@ -82,7 +68,7 @@ class WhoamiController extends Controller
             $em->persist($whoami);
             $em->flush();
 
-            return $this->redirectToRoute('whoami_edit', array('id' => $whoami->getId()));
+            return $this->redirectToRoute('whoami_index', array('id' => $whoami->getId()));
         }
 
         return $this->render('@Chouettes/Admin/whoami/edit.html.twig', array(

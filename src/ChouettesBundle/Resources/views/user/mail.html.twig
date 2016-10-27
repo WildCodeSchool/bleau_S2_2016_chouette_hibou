@@ -1,0 +1,12 @@
+{#{% extends 'base.html.twig' %}#}
+
+{% block body %}
+
+<p>Une demande de contact a été envoyée par {{ prenom }} {{ nom }} à {{ "now" | date("d-m-Y H:i") }}.</p>
+
+<p>Adresse mail de l'utilisateur: {{ mail }}</p>
+<p>Sujet : {{ sujet }}</p>
+<p>Message :</p>
+<p>{{ message }}</p>
+
+{% endblock body %}
